@@ -149,7 +149,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138680180}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f87cba644399ad047b4a91f2520b41d6, type: 3}
   m_Name: 
@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 989258136}
   - component: {fileID: 989258137}
   - component: {fileID: 989258138}
+  - component: {fileID: 989258139}
   m_Layer: 0
   m_Name: ball
   m_TagString: Untagged
@@ -592,6 +593,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d2418c5e2dbc343b3ce4b3114b4260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballRigidbody2D: {fileID: 0}
+  moveSpeed: 5
+  jumping: 10
+--- !u!114 &989258139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989258131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e964a79e3c699746ae6e71f6ff3f844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  turnSpeed: 50
 --- !u!1 &1526586258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6685198953292917897, guid: 034ec50ac59ab964181afec60e905860, type: 3}
