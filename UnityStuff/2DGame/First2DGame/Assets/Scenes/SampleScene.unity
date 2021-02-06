@@ -603,14 +603,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989258131}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15d2418c5e2dbc343b3ce4b3114b4260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballRigidbody2D: {fileID: 0}
-  moveSpeed: 5
-  jumping: 10
+  range: 1
 --- !u!114 &989258139
 MonoBehaviour:
   m_ObjectHideFlags: 0
