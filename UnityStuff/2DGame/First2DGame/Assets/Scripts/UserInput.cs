@@ -18,8 +18,7 @@ public class UserInput : MonoBehaviour
     }
     void FixedUpdate()
     {
-        ballRigidbody2D.AddForce(0f, 0f);
-        ballRigidbody2D.AddForce(jumpMovement, 0f);
+        
     }
 
 }
