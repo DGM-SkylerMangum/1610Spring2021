@@ -13,9 +13,9 @@ public class UserInput : MonoBehaviour
     void Update()
     {
         float moveHor = Input.GetAxis("Horizontal");
-        float moveVir = Input.GetAxis("Vertical");
-        Vector2 theMovement = new Vector2(moveHor, moveVir);
-        rb2d.AddForce(theMovement * speedModifier * Time.deltaTime);
+        float moveVer = Input.GetAxis("Vertical");
+        Vector2 theMovement = new Vector2(moveHor, moveVer);
+        rb2d.AddForce(theMovement * speedModifier);
     }
 
 }
