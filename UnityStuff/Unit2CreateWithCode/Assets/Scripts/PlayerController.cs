@@ -29,7 +29,8 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            Vector3 special = new Vector3(transform.position.x, transform.position.y + 1.25f, transform.position.z);
+            Instantiate(projectilePrefab, special, projectilePrefab.transform.rotation);
         }
     }
 }
