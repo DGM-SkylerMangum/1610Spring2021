@@ -5135,10 +5135,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb83ba7e430e8945983743c22dd75ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  turnspeed: 45
-  horizontalInput: 0
-  forwardInput: 0
+  speed: 0
+  rpm: 0
+  horsePower: 2
+  turnSpeed: 30
+  centerOfMass: {fileID: 2106055575}
+  speedometerText: {fileID: 0}
+  rpmText: {fileID: 0}
+  allWheels: []
+  wheelsOnGround: 0
 --- !u!54 &2106055581
 Rigidbody:
   m_ObjectHideFlags: 0
