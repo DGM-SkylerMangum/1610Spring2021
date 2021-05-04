@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
+        // Instead of destroying the projectile when it collides with an animal
+        //Destroy(other.gameObject); 
+
+        // Just deactivate the food and destroy the animal
+        other.gameObject.SetActive(false);
         Destroy(gameObject);
-        Destroy(other.gameObject);
     }
+
 }

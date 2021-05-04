@@ -427,6 +427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 714108342}
   - component: {fileID: 714108341}
+  - component: {fileID: 714108343}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -464,6 +465,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &714108343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714108340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e1f24e2ce4a5b9bf1f3a7499cd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPool: {fileID: 1603694048}
+  amountToPool: 20
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +647,30 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590138454}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1603694048 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7730619248685805256, guid: 536303cc2542c5f41a5c16a11d304b09,
+    type: 3}
+  m_PrefabInstance: {fileID: 7730619249112562619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1723607215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4862101924375120448, guid: 15bdcec7ebd7b384d89cc6d523c71bf9,
+    type: 3}
+  m_PrefabInstance: {fileID: 4862101925519696952}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1723607219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723607215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e62e9a8a22fac478a927ce940e28f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2003756197 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 6f52b946693e54048af74f5cd6ba49f8,
@@ -649,11 +689,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6174fd16e207e3b46904d7f23a434d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   horizontalInput: 0
   speed: 30
   xRange: 15
   projectilePrefab: {fileID: 7730619248685805256, guid: 536303cc2542c5f41a5c16a11d304b09,
     type: 3}
+--- !u!114 &2003756201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003756197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e917c52987daa41af6a0305d9813c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 0}
 --- !u!1001 &3775684437740325737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -721,7 +780,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114753693627074862, guid: e93aee709ee04664f89b9f1e922f9669, type: 3}
+    - {fileID: 669760736, guid: e93aee709ee04664f89b9f1e922f9669, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e93aee709ee04664f89b9f1e922f9669, type: 3}
 --- !u!1001 &4862101925519696952
 PrefabInstance:
@@ -790,7 +851,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Cow_Brown
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114262109452329788, guid: 15bdcec7ebd7b384d89cc6d523c71bf9, type: 3}
+    - {fileID: 1145532026, guid: 15bdcec7ebd7b384d89cc6d523c71bf9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 15bdcec7ebd7b384d89cc6d523c71bf9, type: 3}
 --- !u!1001 &7730619249112562619
 PrefabInstance:
@@ -859,7 +922,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food_EnergyCan_01
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114484640109451498, guid: 536303cc2542c5f41a5c16a11d304b09, type: 3}
+    - {fileID: 512775540, guid: 536303cc2542c5f41a5c16a11d304b09, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 536303cc2542c5f41a5c16a11d304b09, type: 3}
 --- !u!1001 &8642055789332412303
 PrefabInstance:
@@ -928,5 +993,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Chick
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114548539385397126, guid: a2f2396a36021da4f809fbe079e5e711, type: 3}
+    - {fileID: 1677358899, guid: a2f2396a36021da4f809fbe079e5e711, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a2f2396a36021da4f809fbe079e5e711, type: 3}

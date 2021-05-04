@@ -9,12 +9,12 @@ public class PlayerController : MonoBehaviour
     {
         
     }
-    private float speed = 2.0f;
-    private float turnspeed = 45.0f;
-    private float horizontalInput;
-    private float forwardInput;
+    [SerializeField] private float speed = 2.0f;
+    [SerializeField] private float turnspeed = 45.0f;
+    [SerializeField] private float horizontalInput;
+    [SerializeField] private float forwardInput;
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         forwardInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
